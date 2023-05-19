@@ -22,7 +22,7 @@ public class BlackJack extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         JFrame frame = new BlackJack();
-        frame.setPreferredSize(new Dimension(300,150));
+        frame.setPreferredSize(new Dimension(400,150));
 		frame.pack();
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,18 +33,29 @@ public class BlackJack extends JFrame implements ActionListener {
         stand = new JButton("Stand");
         stand.setBackground(Color.BLACK);
         stand.setForeground(Color.RED);
+        stand.setFont(new Font("Century Gothic", 1, 16));
+
         hit = new JButton("Hit");
         hit.setBackground(Color.BLACK);
         hit.setForeground(Color.RED);
+        hit.setFont(new Font("Century Gothic", 1, 16));
+
         startGame = new JButton("Start New Game");
         startGame.setBackground(Color.BLACK);
         startGame.setForeground(Color.RED);
+        startGame.setFont(new Font("Century Gothic", 1, 16));
+
         cards = new JLabel("Your hand: ");
         cards.setForeground(Color.WHITE);
+        cards.setFont(new Font("Century Gothic", 1, 16));
+
         action = new JLabel("Your move: ");
         action.setForeground(Color.WHITE);
+        action.setFont(new Font("Century Gothic", 1, 16));
+
         results = new JLabel();
         results.setForeground(Color.WHITE);
+        results.setFont(new Font("Century Gothic", 1, 16));
         gS = false;
 
         panel = new JPanel();
